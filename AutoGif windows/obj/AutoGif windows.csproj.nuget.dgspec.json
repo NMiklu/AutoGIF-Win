@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Henry\\source\\repos\\AutoGIF\\AutoGif windows\\AutoGif windows.csproj": {}
+    "C:\\Users\\Henry\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Henry\\source\\repos\\AutoGIF\\AutoGif windows\\AutoGif windows.csproj": {
+    "C:\\Users\\Henry\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Henry\\source\\repos\\AutoGIF\\AutoGif windows\\AutoGif windows.csproj",
+        "projectUniqueName": "C:\\Users\\Henry\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj",
         "projectName": "AutoGif windows",
-        "projectPath": "C:\\Users\\Henry\\source\\repos\\AutoGIF\\AutoGif windows\\AutoGif windows.csproj",
+        "projectPath": "C:\\Users\\Henry\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj",
         "packagesPath": "C:\\Users\\Henry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Henry\\source\\repos\\AutoGIF\\AutoGif windows\\obj\\",
+        "outputPath": "C:\\Users\\Henry\\source\\repos\\AutoGIF-Win\\AutoGif windows\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Henry\\AppData\\Roaming\\NuGet\\NuGet.Config",
