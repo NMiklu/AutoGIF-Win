@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Henry\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj": {}
+    "C:\\Users\\SinnT\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Henry\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj": {
+    "C:\\Users\\SinnT\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Henry\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj",
+        "projectUniqueName": "C:\\Users\\SinnT\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj",
         "projectName": "AutoGif windows",
-        "projectPath": "C:\\Users\\Henry\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj",
-        "packagesPath": "C:\\Users\\Henry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Henry\\source\\repos\\AutoGIF-Win\\AutoGif windows\\obj\\",
+        "projectPath": "C:\\Users\\SinnT\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj",
+        "packagesPath": "C:\\Users\\SinnT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SinnT\\source\\repos\\AutoGIF-Win\\AutoGif windows\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Henry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SinnT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -18,6 +18,7 @@ namespace AutoGif_windows
 {
     public partial class main_window : Form
     {
+        int delay = 0;
         bool recording;
         ScreenCaptureStream scr;
         List<Image> frame_list = new List<Image>();
@@ -72,6 +73,17 @@ namespace AutoGif_windows
             // get new frame
             Bitmap bmp = eventArgs.Frame;
             frame_list.Add(bmp);
+        }
+
+        private void delayTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void delayConfirmButton_Click(object sender, EventArgs e)
+        {
+            // Confirm Button for delay object
+            if (this.delayTextBox.Text.All(char.IsDigit) && this.delayTextBox.Text.Length != 0) { delay = int.Parse(this.delayTextBox.Text); this.delayTextBox.Clear(); }
         }
     }
 }

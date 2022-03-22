@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "mDWiJB0++BN+xla5tlltB/0GAxM2/avgiM/s7bTWRsblIKroJnuUuSraBUiLYPJrEMFVUqo2yaKLmxNwxSO4KA==",
+  "dgSpecHash": "BF0dTtKElm8rnCY511mf9FbN11G6+noCIBUguv4kktUEUeR2BHAXxgSN2/eQoyk6hmilz3SrgyKbNAneZn2Oug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Henry\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj",
+  "projectFilePath": "C:\\Users\\SinnT\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Henry\\.nuget\\packages\\accord\\3.8.0\\accord.3.8.0.nupkg.sha512",
-    "C:\\Users\\Henry\\.nuget\\packages\\accord.video\\3.8.0\\accord.video.3.8.0.nupkg.sha512",
-    "C:\\Users\\Henry\\.nuget\\packages\\accord.video.ffmpeg\\3.8.0\\accord.video.ffmpeg.3.8.0.nupkg.sha512",
-    "C:\\Users\\Henry\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
-    "C:\\Users\\Henry\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
-    "C:\\Users\\Henry\\.nuget\\packages\\gifmotion\\1.0.4\\gifmotion.1.0.4.nupkg.sha512",
-    "C:\\Users\\Henry\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
-    "C:\\Users\\Henry\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
-    "C:\\Users\\Henry\\.nuget\\packages\\system.drawing.common\\4.5.0\\system.drawing.common.4.5.0.nupkg.sha512"
+    "C:\\Users\\SinnT\\.nuget\\packages\\accord\\3.8.0\\accord.3.8.0.nupkg.sha512",
+    "C:\\Users\\SinnT\\.nuget\\packages\\accord.video\\3.8.0\\accord.video.3.8.0.nupkg.sha512",
+    "C:\\Users\\SinnT\\.nuget\\packages\\accord.video.ffmpeg\\3.8.0\\accord.video.ffmpeg.3.8.0.nupkg.sha512",
+    "C:\\Users\\SinnT\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
+    "C:\\Users\\SinnT\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
+    "C:\\Users\\SinnT\\.nuget\\packages\\gifmotion\\1.0.4\\gifmotion.1.0.4.nupkg.sha512",
+    "C:\\Users\\SinnT\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\SinnT\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "C:\\Users\\SinnT\\.nuget\\packages\\system.drawing.common\\4.5.0\\system.drawing.common.4.5.0.nupkg.sha512"
   ],
   "logs": [
     {
