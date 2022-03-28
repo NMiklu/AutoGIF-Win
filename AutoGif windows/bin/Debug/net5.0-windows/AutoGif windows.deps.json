@@ -8,8 +8,9 @@
     ".NETCoreApp,Version=v5.0": {
       "AutoGif windows/1.0.0": {
         "dependencies": {
-          "AForge.Video": "2.2.5",
+          "Accord.Video": "3.8.0",
           "Accord.Video.FFMPEG": "3.8.0",
+          "Accord.Video.FFMPEG.x64": "3.8.0",
           "GifMotion": "1.0.4"
         },
         "runtime": {
@@ -41,23 +42,10 @@
           "Accord.Video": "3.8.0"
         }
       },
-      "AForge/2.2.5": {
-        "runtime": {
-          "lib/AForge.dll": {
-            "assemblyVersion": "2.2.5.0",
-            "fileVersion": "2.2.5.0"
-          }
-        }
-      },
-      "AForge.Video/2.2.5": {
+      "Accord.Video.FFMPEG.x64/3.8.0": {
         "dependencies": {
-          "AForge": "2.2.5"
-        },
-        "runtime": {
-          "lib/AForge.Video.dll": {
-            "assemblyVersion": "2.2.5.0",
-            "fileVersion": "2.2.5.0"
-          }
+          "Accord": "3.8.0",
+          "Accord.Video": "3.8.0"
         }
       },
       "GifMotion/1.0.4": {
@@ -112,19 +100,12 @@
       "path": "accord.video.ffmpeg/3.8.0",
       "hashPath": "accord.video.ffmpeg.3.8.0.nupkg.sha512"
     },
-    "AForge/2.2.5": {
+    "Accord.Video.FFMPEG.x64/3.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-clkumhM9DggqIzEXAHgVLeWO4arG5YfoPr7J4jfjJx35AoeEIJSSm49J25bwp/9mXQYLwi7y1Wunc8qgYJsGxg==",
-      "path": "aforge/2.2.5",
-      "hashPath": "aforge.2.2.5.nupkg.sha512"
-    },
-    "AForge.Video/2.2.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-XqzcOXtBUagEPRqg/00oayxlCPmxP4284SdM62mVotsNoD03fs19BrzdMBfhUOOYPyd0B/IXH7tEWnSDmc2gxA==",
-      "path": "aforge.video/2.2.5",
-      "hashPath": "aforge.video.2.2.5.nupkg.sha512"
+      "sha512": "sha512-eYHbjfn6AlYPjhaPBWy6Hyjnw5lbWzBQ43GzwsQQcAMgsYB6sK7kwh5yTHns4UycI2v0Y/I/WVXJdOcpaiK3Xw==",
+      "path": "accord.video.ffmpeg.x64/3.8.0",
+      "hashPath": "accord.video.ffmpeg.x64.3.8.0.nupkg.sha512"
     },
     "GifMotion/1.0.4": {
       "type": "package",

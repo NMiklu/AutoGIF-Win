@@ -12,66 +12,63 @@ using System.Windows.Forms;
 
 using GifMotion;
 using System.IO;
-using AForge.Video;
 
 namespace AutoGif_windows
 {
     public partial class main_window : Form
     {
-        bool recording;
-        ScreenCaptureStream scr;
-        List<Image> frame_list = new List<Image>();
+        int FPS = 10;
+        bool recording = false;
+        Bitmap img;
+        Graphics g;
+        String path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
+        GifCreator gifCreator;
+        List<Image> frame_list;
         public main_window()
         {
             InitializeComponent();
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (recording)
+            if (!recording)
             {
-                scr.SignalToStop();
-                scr.WaitForStop();
-                string workingPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
-                using (GifCreator gifCreator = AnimatedGif.Create(workingPath + "/test.gif", 33))
-                {
-                    foreach (Image img in frame_list) 
-                    {
-                        using (img) 
-                        {
-                            // Add the image to gifEncoder with default Quality
-                            gifCreator.AddFrame(img, delay: -1, quality: GIFQuality.Bit8);
-                        } // Image disposed
-                    }
-                    
-                }
-                button1.Text = "Start Recording";
-                button1.BackColor = System.Drawing.Color.DarkSeaGreen;
-                recording = false;
-            } else {
-                scr.Start();
+                frame_list = new List<Image>();
+                gifCreator = AnimatedGif.Create(path + "/test.gif", 33);
+                timer1.Start();
+
+
                 button1.Text = "Stop Recording";
                 button1.BackColor = System.Drawing.Color.Red;
                 recording = true;
             }
-            
+            else
+            {
+                timer1.Stop();
+                gifCreator.Dispose();
+
+                button1.Text = "Start Recording";
+                button1.BackColor = System.Drawing.Color.SeaGreen;
+                recording = false;
+            }
+
         }
 
         private void main_window_Load(object sender, EventArgs e)
         {
-            Rectangle screenArea = Rectangle.Empty;
-            foreach (System.Windows.Forms.Screen screen in System.Windows.Forms.Screen.AllScreens)
-            {
-                screenArea = Rectangle.Union(screenArea, screen.Bounds);
-            }
-            recording = false;
-            scr = new ScreenCaptureStream(screenArea);
-            scr.NewFrame += new NewFrameEventHandler(video_NewFrame);
+            timer1 = new System.Windows.Forms.Timer();
+            timer1.Interval = FPS;
+            timer1.Tick += timer1_Tick;
         }
-        private void video_NewFrame(object sender, NewFrameEventArgs eventArgs)
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            // get new frame
-            Bitmap bmp = eventArgs.Frame;
-            frame_list.Add(bmp);
+            // code to take screenshots
+            img = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+            g = Graphics.FromImage(img);
+            g.CopyFromScreen(0, 0, 0, 0, img.Size);
+            pictureBox1.Image = img;
+            frame_list.Add(img);
+            gifCreator.AddFrame(img, delay: -1, quality: GIFQuality.Bit8);
         }
     }
 }
