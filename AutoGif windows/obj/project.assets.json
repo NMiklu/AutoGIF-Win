@@ -322,26 +322,25 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "Accord.Video >= 3.8.0",
       "Accord.Video.FFMPEG >= 3.8.0",
       "Accord.Video.FFMPEG.x64 >= 3.8.0",
       "GifMotion >= 1.0.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SinnT\\.nuget\\packages\\": {}
+    "C:\\Users\\Henry\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SinnT\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj",
+      "projectUniqueName": "C:\\Users\\Henry\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj",
       "projectName": "AutoGif windows",
-      "projectPath": "C:\\Users\\SinnT\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj",
-      "packagesPath": "C:\\Users\\SinnT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SinnT\\source\\repos\\AutoGIF-Win\\AutoGif windows\\obj\\",
+      "projectPath": "C:\\Users\\Henry\\source\\repos\\AutoGIF-Win\\AutoGif windows\\AutoGif windows.csproj",
+      "packagesPath": "C:\\Users\\Henry\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Henry\\source\\repos\\AutoGIF-Win\\AutoGif windows\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SinnT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Henry\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -367,10 +366,6 @@
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
         "dependencies": {
-          "Accord.Video": {
-            "target": "Package",
-            "version": "[3.8.0, )"
-          },
           "Accord.Video.FFMPEG": {
             "target": "Package",
             "version": "[3.8.0, )"

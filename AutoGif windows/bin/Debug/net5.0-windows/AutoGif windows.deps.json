@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v5.0": {
       "AutoGif windows/1.0.0": {
         "dependencies": {
-          "Accord.Video": "3.8.0",
           "Accord.Video.FFMPEG": "3.8.0",
           "Accord.Video.FFMPEG.x64": "3.8.0",
           "GifMotion": "1.0.4"

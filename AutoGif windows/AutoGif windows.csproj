@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Accord.Video" Version="3.8.0" />
     <PackageReference Include="Accord.Video.FFMPEG" Version="3.8.0" />
     <PackageReference Include="Accord.Video.FFMPEG.x64" Version="3.8.0" />
     <PackageReference Include="GifMotion" Version="1.0.4" />
