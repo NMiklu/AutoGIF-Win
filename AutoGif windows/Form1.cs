@@ -42,11 +42,13 @@ namespace AutoGif_windows
             gifCreator.Dispose();
 
             progressBar1.Invoke(new MethodInvoker(delegate { progressBar1.Visible = false; }));
-            button1.Invoke(new MethodInvoker(delegate { button1.Visible = true; })); 
+            button1.Invoke(new MethodInvoker(delegate { button1.Visible = true; button1.BringToFront(); button1.Text = "Start Recording"; button1.BackColor = System.Drawing.Color.SeaGreen; })); 
+            /*
             button1.Invoke(new MethodInvoker(delegate { button1.BringToFront(); }));
 
             button1.Invoke(new MethodInvoker(delegate { button1.Text = "Start Recording"; }));
             button1.Invoke(new MethodInvoker(delegate { button1.BackColor = System.Drawing.Color.SeaGreen; }));
+            */
             recording = false;
             processingFramesDone = true;
         }
@@ -62,6 +64,7 @@ namespace AutoGif_windows
                 button1.Text = "Stop Recording";
                 button1.BackColor = System.Drawing.Color.Red;
                 recording = true;
+                processingFramesDone = false;
             }
             else
             {
