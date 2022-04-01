@@ -36,17 +36,17 @@ namespace AutoGif_windows
         {
             foreach (Image img in frame_list) {
                 gifCreator.AddFrame(img, delay: -1, quality: GIFQuality.Bit8);
-                progressBar1.PerformStep();
+                progressBar1.Invoke(new MethodInvoker(delegate { progressBar1.PerformStep(); }));
             }
             // when thread finishes, reshow button
             gifCreator.Dispose();
 
-            progressBar1.Visible = false;
-            button1.Visible = true;
-            button1.BringToFront();
+            progressBar1.Invoke(new MethodInvoker(delegate { progressBar1.Visible = false; }));
+            button1.Invoke(new MethodInvoker(delegate { button1.Visible = true; })); 
+            button1.Invoke(new MethodInvoker(delegate { button1.BringToFront(); }));
 
-            button1.Text = "Start Recording";
-            button1.BackColor = System.Drawing.Color.SeaGreen;
+            button1.Invoke(new MethodInvoker(delegate { button1.Text = "Start Recording"; }));
+            button1.Invoke(new MethodInvoker(delegate { button1.BackColor = System.Drawing.Color.SeaGreen; }));
             recording = false;
             processingFramesDone = true;
         }
