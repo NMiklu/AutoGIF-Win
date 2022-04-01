@@ -40,11 +40,15 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "dependencies": {
-            "AForge.Video": {
+            "Accord.Video": {
               "target": "Package",
-              "version": "[2.2.5, )"
+              "version": "[3.8.0, )"
             },
             "Accord.Video.FFMPEG": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "Accord.Video.FFMPEG.x64": {
               "target": "Package",
               "version": "[3.8.0, )"
             },

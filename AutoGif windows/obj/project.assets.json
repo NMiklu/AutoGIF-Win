@@ -36,25 +36,14 @@
           "build/Accord.Video.FFMPEG.targets": {}
         }
       },
-      "AForge/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/AForge.dll": {}
-        },
-        "runtime": {
-          "lib/AForge.dll": {}
-        }
-      },
-      "AForge.Video/2.2.5": {
+      "Accord.Video.FFMPEG.x64/3.8.0": {
         "type": "package",
         "dependencies": {
-          "AForge": "2.2.5"
+          "Accord": "3.8.0",
+          "Accord.Video": "3.8.0"
         },
-        "compile": {
-          "lib/AForge.Video.dll": {}
-        },
-        "runtime": {
-          "lib/AForge.Video.dll": {}
+        "build": {
+          "build/Accord.Video.FFMPEG.x64.targets": {}
         }
       },
       "GifMotion/1.0.4": {
@@ -219,30 +208,33 @@
         "lib/net462/Accord.Video.FFMPEG.xml"
       ]
     },
-    "AForge/2.2.5": {
-      "sha512": "clkumhM9DggqIzEXAHgVLeWO4arG5YfoPr7J4jfjJx35AoeEIJSSm49J25bwp/9mXQYLwi7y1Wunc8qgYJsGxg==",
+    "Accord.Video.FFMPEG.x64/3.8.0": {
+      "sha512": "eYHbjfn6AlYPjhaPBWy6Hyjnw5lbWzBQ43GzwsQQcAMgsYB6sK7kwh5yTHns4UycI2v0Y/I/WVXJdOcpaiK3Xw==",
       "type": "package",
-      "path": "aforge/2.2.5",
+      "path": "accord.video.ffmpeg.x64/3.8.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "aforge.2.2.5.nupkg.sha512",
-        "aforge.nuspec",
-        "lib/AForge.dll",
-        "lib/AForge.xml"
-      ]
-    },
-    "AForge.Video/2.2.5": {
-      "sha512": "XqzcOXtBUagEPRqg/00oayxlCPmxP4284SdM62mVotsNoD03fs19BrzdMBfhUOOYPyd0B/IXH7tEWnSDmc2gxA==",
-      "type": "package",
-      "path": "aforge.video/2.2.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "aforge.video.2.2.5.nupkg.sha512",
-        "aforge.video.nuspec",
-        "lib/AForge.Video.dll",
-        "lib/AForge.Video.xml"
+        "accord.video.ffmpeg.x64.3.8.0.nupkg.sha512",
+        "accord.video.ffmpeg.x64.nuspec",
+        "build/Accord.Video.FFMPEG.x64.targets",
+        "build/FFMPEG-README.txt",
+        "build/avcodec-57.dll",
+        "build/avdevice-57.dll",
+        "build/avfilter-6.dll",
+        "build/avformat-57.dll",
+        "build/avutil-55.dll",
+        "build/postproc-54.dll",
+        "build/swresample-2.dll",
+        "build/swscale-4.dll",
+        "lib/net40/Accord.Video.FFMPEG.x64.dll",
+        "lib/net40/Accord.Video.FFMPEG.x64.xml",
+        "lib/net45/Accord.Video.FFMPEG.x64.dll",
+        "lib/net45/Accord.Video.FFMPEG.x64.xml",
+        "lib/net46/Accord.Video.FFMPEG.x64.dll",
+        "lib/net46/Accord.Video.FFMPEG.x64.xml",
+        "lib/net462/Accord.Video.FFMPEG.x64.dll",
+        "lib/net462/Accord.Video.FFMPEG.x64.xml"
       ]
     },
     "GifMotion/1.0.4": {
@@ -330,8 +322,9 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "AForge.Video >= 2.2.5",
+      "Accord.Video >= 3.8.0",
       "Accord.Video.FFMPEG >= 3.8.0",
+      "Accord.Video.FFMPEG.x64 >= 3.8.0",
       "GifMotion >= 1.0.4"
     ]
   },
@@ -374,11 +367,15 @@
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
         "dependencies": {
-          "AForge.Video": {
+          "Accord.Video": {
             "target": "Package",
-            "version": "[2.2.5, )"
+            "version": "[3.8.0, )"
           },
           "Accord.Video.FFMPEG": {
+            "target": "Package",
+            "version": "[3.8.0, )"
+          },
+          "Accord.Video.FFMPEG.x64": {
             "target": "Package",
             "version": "[3.8.0, )"
           },
@@ -408,27 +405,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AForge 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "AForge",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AForge.Video 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "AForge.Video",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

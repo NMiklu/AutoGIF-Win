@@ -22,8 +22,6 @@ C:\Users\Henry\source\repos\AutoGIF-Win\AutoGif windows\bin\Debug\net5.0-windows
 C:\Users\Henry\source\repos\AutoGIF-Win\AutoGif windows\bin\Debug\net5.0-windows\AutoGif windows.pdb
 C:\Users\Henry\source\repos\AutoGIF-Win\AutoGif windows\bin\Debug\net5.0-windows\Accord.dll
 C:\Users\Henry\source\repos\AutoGIF-Win\AutoGif windows\bin\Debug\net5.0-windows\Accord.Video.dll
-C:\Users\Henry\source\repos\AutoGIF-Win\AutoGif windows\bin\Debug\net5.0-windows\AForge.dll
-C:\Users\Henry\source\repos\AutoGIF-Win\AutoGif windows\bin\Debug\net5.0-windows\AForge.Video.dll
 C:\Users\Henry\source\repos\AutoGIF-Win\AutoGif windows\bin\Debug\net5.0-windows\GifMotion.dll
 C:\Users\Henry\source\repos\AutoGIF-Win\AutoGif windows\obj\Debug\net5.0-windows\AutoGif windows.csproj.CopyComplete
 C:\Users\Henry\source\repos\AutoGIF-Win\AutoGif windows\obj\Debug\net5.0-windows\AutoGif windows.dll
@@ -31,3 +29,4 @@ C:\Users\Henry\source\repos\AutoGIF-Win\AutoGif windows\obj\Debug\net5.0-windows
 C:\Users\Henry\source\repos\AutoGIF-Win\AutoGif windows\obj\Debug\net5.0-windows\AutoGif windows.pdb
 C:\Users\Henry\source\repos\AutoGIF-Win\AutoGif windows\obj\Debug\net5.0-windows\AutoGif windows.genruntimeconfig.cache
 C:\Users\Henry\source\repos\AutoGIF-Win\AutoGif windows\obj\Debug\net5.0-windows\ref\AutoGif windows.dll
+C:\Users\Henry\source\repos\AutoGIF-Win\AutoGif windows\obj\Debug\net5.0-windows\AutoGif_windows.Properties.Resources.resources
