@@ -64,7 +64,7 @@
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAIAAADwf7zUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAA/7JJREFUeF7s/fV3VGnaPvCeX85a5/vONBqtuHtCAgQLRAjB3d3dXRuncXd3lzjB
+        vQAADr0BR/uQrQAA/7JJREFUeF7s/fV3VGnaPvCeX85a5/vONBqtuHtCAgQLRAjB3d3dXRuncXd3lzjB
         iSsQ4oo33T3v+0+c+36evXft7IQe2kaoa63PyqpUKpVUqpm5rv3Y/+f/+z9tAAAAAADAQqAAAAAAAABY
         EBQAAAAAAAALggIAAAAAAGBBUAAAAAAAACwICgAAAAAAgAVBAQAAAAAAsCAoAAAAAAAAFgQFAAAAAADA
         gqAAAAAAAABYEBQAAAAAAAALggIAAAAAAGBBUAAAAAAAACwICgAAAAAAgAVBAQAAAAAAsCAoAAAAAAAA
@@ -5646,4 +5646,10 @@
         AACYCAoAAAAAAIBp/F9/+v8DRVcO06oV/54AAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="recTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>187, 17</value>
+  </metadata>
+  <metadata name="delayTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>395, 17</value>
+  </metadata>
 </root>

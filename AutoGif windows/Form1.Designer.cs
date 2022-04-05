@@ -38,6 +38,10 @@ namespace AutoGif_windows
             this.delayBar = new System.Windows.Forms.TrackBar();
             this.timerBar = new System.Windows.Forms.TrackBar();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.recTimer = new System.Windows.Forms.Timer(this.components);
+            this.delayTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.delayBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timerBar)).BeginInit();
@@ -81,17 +85,19 @@ namespace AutoGif_windows
             // 
             // delayBar
             // 
-            this.delayBar.Location = new System.Drawing.Point(457, 561);
+            this.delayBar.Location = new System.Drawing.Point(202, 561);
             this.delayBar.Name = "delayBar";
-            this.delayBar.Size = new System.Drawing.Size(860, 114);
+            this.delayBar.Size = new System.Drawing.Size(1068, 114);
             this.delayBar.TabIndex = 4;
+            this.delayBar.Scroll += new System.EventHandler(this.delayBar_Scroll);
             // 
             // timerBar
             // 
-            this.timerBar.Location = new System.Drawing.Point(457, 667);
+            this.timerBar.Location = new System.Drawing.Point(202, 665);
             this.timerBar.Name = "timerBar";
-            this.timerBar.Size = new System.Drawing.Size(860, 114);
+            this.timerBar.Size = new System.Drawing.Size(1068, 114);
             this.timerBar.TabIndex = 5;
+            this.timerBar.Scroll += new System.EventHandler(this.timerBar_Scroll);
             // 
             // pictureBox2
             // 
@@ -103,12 +109,46 @@ namespace AutoGif_windows
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(28, 561);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 57);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Delay";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(28, 679);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(144, 57);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Timer";
+            // 
+            // recTimer
+            // 
+            this.recTimer.Interval = 1000;
+            this.recTimer.Tick += new System.EventHandler(this.recTimer_Tick);
+            // 
+            // delayTimer
+            // 
+            this.delayTimer.Interval = 1000;
+            this.delayTimer.Tick += new System.EventHandler(this.delayTimer_Tick);
+            // 
             // main_window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(4)))), ((int)(((byte)(22)))));
             this.ClientSize = new System.Drawing.Size(1329, 802);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.timerBar);
             this.Controls.Add(this.delayBar);
@@ -137,5 +177,9 @@ namespace AutoGif_windows
         private System.Windows.Forms.TrackBar delayBar;
         private System.Windows.Forms.TrackBar timerBar;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer recTimer;
+        private System.Windows.Forms.Timer delayTimer;
     }
 }
