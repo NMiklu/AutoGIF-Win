@@ -51,19 +51,17 @@ namespace AutoGif_windows
                 button1.Text = "Start Recording"; 
                 button1.BackColor = System.Drawing.Color.SeaGreen; 
             })); 
-            recording = false;
             processingFramesDone = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!recording)
+            if (!recording && !delayTimer.Enabled)
             {
                 frame_list = new List<Image>();
                 gifCreator = AnimatedGif.Create(path + "/test.gif", 33);
                 if (recDelay == 0)
                 {
-                    timer1.Start();
                     if (recTime != 0)
                     {
                         recTimer.Start();
@@ -71,6 +69,7 @@ namespace AutoGif_windows
                     button1.Text = "Stop Recording";
                     button1.BackColor = System.Drawing.Color.Red;
                     processingFramesDone = false;
+                    recording = true;
                 } 
                 else
                 {
@@ -78,10 +77,9 @@ namespace AutoGif_windows
                     button1.Text = "Starting...";
                     button1.BackColor = System.Drawing.Color.Blue;
                 }
-                recording = true;
 
             }
-            else
+            else if (!delayTimer.Enabled)
             {
                 if (!processingFramesDone)
                 {
@@ -93,7 +91,7 @@ namespace AutoGif_windows
                     progressBar1.Minimum = 1;
                     progressBar1.Value = 1;
                     progressBar1.Step = 1;
-                    timer1.Stop();
+                    recording = false;
 
                     // create new thread to process frames so program doesn't stall
                     gifThread = new Thread(processFrames);
@@ -107,8 +105,12 @@ namespace AutoGif_windows
             timer1 = new System.Windows.Forms.Timer();
             timer1.Interval = FPS;
             timer1.Tick += timer1_Tick;
+            timer1.Start();
+
             recTimer.Tick += recTimer_Tick;
+
             delayTimer.Tick += delayTimer_Tick;
+
             progressBar1.Visible = false;
         }
 
@@ -119,7 +121,10 @@ namespace AutoGif_windows
             g = Graphics.FromImage(img);
             g.CopyFromScreen(0, 0, 0, 0, img.Size);
             pictureBox1.Image = img;
-            frame_list.Add(img);
+            if (recording)
+            {
+                frame_list.Add(img);
+            }
         }
 
         private void delayBar_Scroll(object sender, EventArgs e)
@@ -159,7 +164,7 @@ namespace AutoGif_windows
                 progressBar1.Minimum = 1;
                 progressBar1.Value = 1;
                 progressBar1.Step = 1;
-                timer1.Stop();
+                recording = false;
 
                 // create new thread to process frames so program doesn't stall
                 gifThread = new Thread(processFrames);
@@ -170,7 +175,7 @@ namespace AutoGif_windows
         private void delayTimer_Tick(object sender, EventArgs e)
         {
             delayTimer.Stop();
-            timer1.Start();
+            recording = true;
             if (recTime != 0)
             {
                 recTimer.Start();

@@ -42,6 +42,7 @@ namespace AutoGif_windows
             this.label2 = new System.Windows.Forms.Label();
             this.recTimer = new System.Windows.Forms.Timer(this.components);
             this.delayTimer = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.delayBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timerBar)).BeginInit();
@@ -50,7 +51,7 @@ namespace AutoGif_windows
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.button1.BackColor = System.Drawing.Color.SeaGreen;
             this.button1.Font = new System.Drawing.Font("Tahoma", 15.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(923, 12);
@@ -181,5 +182,6 @@ namespace AutoGif_windows
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer recTimer;
         private System.Windows.Forms.Timer delayTimer;
+        private System.Windows.Forms.Timer timer2;
     }
 }
